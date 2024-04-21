@@ -7,6 +7,7 @@ export default defineConfig({
   description: "资源网址导航 - 为开发者提供各种资源网址导航，包括前端、后端、设计、工具等等。",
   lastUpdated: true,
   outDir: 'dist',
+  base: "/vitepress-resources-nav/",
   themeConfig: {
     logo: '/logo.png',
     search: {
