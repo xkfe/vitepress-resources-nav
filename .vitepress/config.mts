@@ -6,6 +6,7 @@ export default defineConfig({
   title: "小凯同学的网址导航",
   description: "资源网址导航 - 为开发者提供各种资源网址导航，包括前端、后端、设计、工具等等。",
   lastUpdated: true,
+  outDir: 'dist',
   themeConfig: {
     logo: '/logo.png',
     search: {
