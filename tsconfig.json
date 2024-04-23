@@ -1,0 +1,17 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "types": [
+      "vite-plugin-pwa",
+      "vite-plugin-pwa/client",
+      "vitepress"
+    ]
+  },
+  "include": [
+    "./*.ts",
+    "./.vitepress/**/*.ts",
+    "./.vitepress/**/*.vue"
+  ],
+  "exclude": ["dist", "node_modules"]
+}

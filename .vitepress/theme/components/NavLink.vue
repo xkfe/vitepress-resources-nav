@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { withBase } from 'vitepress'
 import { slugify } from '@mdit-vue/shared'
 
-import { INavLink } from '../types'
+import type { INavLink } from '../types'
 
 const props = defineProps<{
   noIcon?: boolean
@@ -53,7 +53,7 @@ const formatBadge = computed(() => {
         </h5>
       </div>
       <Badge v-if="formatBadge" class="badge" :type="formatBadge.type" :text="formatBadge.text" />
-      <p v-if="desc" class="desc">{{ desc }}</p>
+      <p v-if="desc" v-html="desc" class="desc"></p>
     </article>
   </a>
 </template>
@@ -74,16 +74,16 @@ const formatBadge = computed(() => {
   &:hover {
     box-shadow: var(--vp-shadow-2);
     border-color: var(--vp-c-brand);
-    // background-color: var(--vp-c-bg);
-    background-color: var(--vp-code-copy-code-bg);
+    background-color: var(--vp-c-bg);
+    transform: translateY(-6px);
 
-    animation-name: hvr-bob-float, hvr-bob;
-    animation-duration: .3s, 1.5s;
-    animation-delay: 0s, .3s;
-    animation-timing-function: ease-out, ease-in-out;
-    animation-iteration-count: 1, infinite;
-    animation-fill-mode: forwards;
-    animation-direction: normal, alternate;
+    // animation-name: hvr-bob-float, hvr-bob;
+    // animation-duration: .3s, 1.5s;
+    // animation-delay: 0s, .3s;
+    // animation-timing-function: ease-out, ease-in-out;
+    // animation-iteration-count: 1, infinite;
+    // animation-fill-mode: forwards;
+    // animation-direction: normal, alternate;
   }
 
   .box {

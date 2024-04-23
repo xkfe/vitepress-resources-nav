@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import { nextTick, provide } from 'vue'
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { nextTick, provide } from 'vue'
+import Giscus from '@giscus/vue'
+import ReloadPrompt from './ReloadPrompt.vue'
 
 const { Layout } = DefaultTheme
-const { isDark } = useData()
-
+const { isDark,theme,frontmatter } = useData()
+const { comment } = theme.value
 
 const enableTransitions = () =>
   'startViewTransition' in document &&
@@ -49,6 +51,26 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
       https://vitepress.dev/zh/guide/extending-default-theme#layout-slots
       https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/Layout.vue
     -->
+    <template v-if="comment && frontmatter.comment !== false" #doc-footer-before>
+      <div class="doc-comments">
+        <Giscus
+          id="comments"
+          mapping="specific"
+          term="Welcome to 小凯同学的网址导航!"
+          strict="1"
+          reactionsEnabled="1"
+          emitMetadata="0"
+          inputPosition="top"
+          :theme="isDark ? 'dark' : 'light'"
+          lang="zh-CN"
+          loading="lazy"
+          v-bind="{ ...comment }"
+        />
+      </div>
+    </template>
+    <template #layout-bottom>
+      <ReloadPrompt />
+    </template>
   </Layout>
 </template>
 
