@@ -4,9 +4,11 @@ import DefaultTheme from 'vitepress/theme'
 
 import CustomLayout from './components/Layout.vue'
 import NavLinks from './components/NavLinks.vue'
+import ReloadPrompt from './components/ReloadPrompt.vue'
+
 
 import './styles/index.css'
-// import 'uno:css'
+import 'uno.css';
 
 let homePageStyle: HTMLStyleElement | undefined
 
@@ -22,7 +24,9 @@ export default {
       props.class = frontmatter.value.layoutClass
     }
 
-    return h(CustomLayout, props)
+    return h(CustomLayout, props,{
+      'layout-bottom': () => h(ReloadPrompt),
+    })
   },
   enhanceApp({ app, router }: EnhanceAppContext) {
     app.component('NavLinks', NavLinks)

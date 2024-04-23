@@ -50,4 +50,9 @@ export const pwa: Partial<VitePWAOptions> = {
     //   },
     // ],
   },
+  devOptions: {
+    enabled: true,
+    suppressWarnings: true,
+    navigateFallback: '/',
+  },
 }

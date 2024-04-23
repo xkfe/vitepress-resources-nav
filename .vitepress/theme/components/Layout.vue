@@ -3,7 +3,6 @@ import { nextTick, provide } from 'vue'
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import Giscus from '@giscus/vue'
-import ReloadPrompt from './ReloadPrompt.vue'
 
 const { Layout } = DefaultTheme
 const { isDark,theme,frontmatter } = useData()
@@ -67,9 +66,6 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
           v-bind="{ ...comment }"
         />
       </div>
-    </template>
-    <template #layout-bottom>
-      <ReloadPrompt />
     </template>
   </Layout>
 </template>
