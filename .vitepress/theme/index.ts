@@ -1,7 +1,8 @@
 import { h, watch } from 'vue'
-import { useData, type EnhanceAppContext } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
+import { useData,inBrowser, type EnhanceAppContext } from 'vitepress'
+import { registerBaiDuAnalytics, siteIds, trackPageview } from './plugins/baidutongji'
 
+import DefaultTheme from 'vitepress/theme'
 import CustomLayout from './components/Layout.vue'
 import NavLinks from './components/NavLinks.vue'
 import ReloadPrompt from './components/ReloadPrompt.vue'
@@ -30,6 +31,18 @@ export default {
   },
   enhanceApp({ app, router }: EnhanceAppContext) {
     app.component('NavLinks', NavLinks)
+    if (inBrowser) {
+      registerBaiDuAnalytics(siteIds)
+
+      window.addEventListener('hashchange', () => {
+        const { href: url } = window.location
+        trackPageview(siteIds, url)
+      })
+
+      router.onAfterRouteChanged = (to) => {
+        trackPageview(siteIds, to)
+      }
+    }
 
     if (typeof window !== 'undefined') {
       watch(

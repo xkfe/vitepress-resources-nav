@@ -1,0 +1,125 @@
+<script setup lang="ts">
+</script>
+
+<template>
+  <div class="panel mt-[12px] mb-[8px]">
+    <div class="mx-auto container max-w-[1152px] min-h-[32px] bg-[var(--vp-c-bg-soft)] w-full rounded-[8px]">
+      <section class="grid grid-cols-3 justify-items-center py-[12px] px-[12px] md:px-[24px] items-center font-500">
+        <span class="text-sm">
+          本站总访问量 <span id="busuanzi_value_site_pv" class="font-bold">--</span> 次
+        </span>
+        <fa6-solid:heart-pulse class="heart" />
+        <span class="text-sm">
+          本站访客数 <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
+        </span>
+      </section>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+
+.heart {
+  color: red;
+  animation: iconAnimate 1.33s ease-in-out infinite
+}
+
+@-moz-keyframes iconAnimate {
+  0%,
+  100% {
+    transform: scale(1)
+  }
+
+  10%,
+  30% {
+    transform: scale(.9)
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: scale(1.1)
+  }
+
+  50%,
+  70% {
+    transform: scale(1.1)
+  }
+}
+
+@-webkit-keyframes iconAnimate {
+
+  0%,
+  100% {
+    transform: scale(1)
+  }
+
+  10%,
+  30% {
+    transform: scale(.9)
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: scale(1.1)
+  }
+
+  50%,
+  70% {
+    transform: scale(1.1)
+  }
+}
+
+@-o-keyframes iconAnimate {
+
+  0%,
+  100% {
+    transform: scale(1)
+  }
+
+  10%,
+  30% {
+    transform: scale(.9)
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: scale(1.1)
+  }
+
+  50%,
+  70% {
+    transform: scale(1.1)
+  }
+}
+
+@keyframes iconAnimate {
+
+  0%,
+  100% {
+    transform: scale(1)
+  }
+
+  10%,
+  30% {
+    transform: scale(.9)
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: scale(1.1)
+  }
+
+  50%,
+  70% {
+    transform: scale(1.1)
+  }
+}
+</style>

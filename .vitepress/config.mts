@@ -6,12 +6,12 @@ import { pwa } from './scripts/pwa'
 export default withPwa(defineConfig({
   lang: 'zh-Hans',
   title: "小凯同学的网址导航",
-  description: "资源网址导航 - 为开发者提供各种资源网址导航，包括前端、后端、设计、工具等。",
+  description: "资源网址导航 - 为开发者提供各种资源网址导航，包括前端、后端、工具等。",
   lastUpdated: true,
   outDir: 'dist',
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    // ['link', { rel: 'icon', type: 'image/svg+xml', href: '/path/to/icon.svg' }], for svg
+    ['script', { async:'async', src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js' }]
   ],
   themeConfig: {
     logo: '/logo.png',

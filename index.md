@@ -12,9 +12,13 @@ next: false
 import { NAV_DATA } from '/.vitepress/theme/resources-data'
 </script>
 :::tip
-**资源网址导航** - 为开发者提供各种资源网址导航，包括前端、后端、设计、工具等。
+**资源网址导航** - 为开发者提供各种资源网址导航，包括前端、后端、工具等。
 
 **_同时也欢迎大家评论提交优秀的资源网址!_**
+
+<DataPanel/>
 :::
+
+
 
 <NavLinks v-for="{title, items} in NAV_DATA" :title="title" :items="items"/>
