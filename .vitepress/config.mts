@@ -11,7 +11,8 @@ export default withPwa(defineConfig({
   outDir: 'dist',
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    ['script', { async:'async', src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js' }]
+    ['script', { async:'async', src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js' }],
+    ['script', { async:'async', src: 'https://hm.baidu.com/hm.js?c1758ab719e62956b260cc77d3e7e052' }],
   ],
   themeConfig: {
     logo: '/logo.png',
