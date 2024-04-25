@@ -5,7 +5,7 @@ import { pwa } from './scripts/pwa'
 // https://vitepress.dev/zh/reference/site-config
 export default withPwa(defineConfig({
   lang: 'zh-Hans',
-  title: "小凯同学的网址导航",
+  title: `小凯同学的网址导航`,
   description: "资源网址导航 - 为开发者提供各种资源网址导航，包括前端、后端、工具等。",
   lastUpdated: true,
   outDir: 'dist',

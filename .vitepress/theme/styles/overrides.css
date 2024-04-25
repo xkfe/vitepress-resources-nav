@@ -83,6 +83,23 @@ table {
 .VPNavBar .divider-line {
   background-color: var(--vp-c-gutter) !important;
 }
+.title-after {
+  margin-left: 8px;
+  border-radius: 16px;
+  padding: 0 16px;
+  font-size: 12px;
+  font-weight: bolder;
+  line-height: 20px;
+  cursor: default;
+  letter-spacing: 1px;
+  /* border: 1px solid var(--vp-badge-info-border);
+  color: var(--vp-badge-info-text);
+  background-color: var(--vp-badge-info-bg); */
+
+  border-color: 1px solid var(--vp-badge-tip-border);
+  color: var(--vp-badge-tip-text);
+  background-color: var(--vp-badge-tip-bg);
+}
 
 /* dark/light radial transition */
 ::view-transition-old(root),

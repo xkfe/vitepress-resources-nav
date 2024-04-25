@@ -1,12 +1,12 @@
 {
   "name": "vitepress-resources-nav",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build",
+    "build": "vitepress build && node .vitepress/scripts/update-version.js",
     "preview": "vitepress preview"
   },
   "keywords": [],

@@ -6,6 +6,7 @@ import DefaultTheme from 'vitepress/theme'
 import CustomLayout from './components/Layout.vue'
 import NavLinks from './components/NavLinks.vue'
 import ReloadPrompt from './components/ReloadPrompt.vue'
+import { version } from '../../package.json'
 
 import './styles/index.css'
 import 'uno.css';
@@ -26,6 +27,7 @@ export default {
 
     return h(CustomLayout, props,{
       'layout-bottom': () => h(ReloadPrompt),
+      'nav-bar-title-after': () => h('span', { class: 'title-after' }, `v${version}`),
     })
   },
   enhanceApp({ app, router }: EnhanceAppContext) {

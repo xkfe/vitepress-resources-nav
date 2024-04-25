@@ -6,6 +6,10 @@ export const NAV_DATA: INavData[] = [
     items: [
       {
         icon: '/resources-logos/george.webp',
+        badge: {
+          text: '推荐',
+          type: 'warning'
+        },
         title: 'tinypng压缩',
         desc: '智能 WebP、PNG 和 JPEG 压缩',
         link: 'https://tinypng.com/',
