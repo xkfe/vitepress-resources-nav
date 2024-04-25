@@ -22,7 +22,7 @@ const formatTitle = computed(() => {
 })
 
 const svg = computed(() => {
-  if (typeof props.icon === 'object') return props.icon.svg
+  if (typeof props.icon === 'object') return withBase(props.icon.svg)
   return ''
 })
 
