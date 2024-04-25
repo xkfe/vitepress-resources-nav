@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { nextTick, provide } from 'vue'
+import { nextTick, provide,useSlots } from 'vue'
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import Giscus from '@giscus/vue'
@@ -7,6 +7,7 @@ import Giscus from '@giscus/vue'
 const { Layout } = DefaultTheme
 const { isDark,theme,frontmatter } = useData()
 const { comment } = theme.value
+const slots = Object.keys(useSlots())
 
 const enableTransitions = () =>
   'startViewTransition' in document &&
@@ -50,6 +51,9 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
       https://vitepress.dev/zh/guide/extending-default-theme#layout-slots
       https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/Layout.vue
     -->
+    <template v-for="(slotKey, slotIndex) in slots" :key="slotIndex" v-slot:[slotKey]>
+      <slot :name="slotKey"></slot>
+    </template>
     <template v-if="comment && frontmatter.comment !== false" #doc-footer-before>
       <div class="doc-comments">
         <Giscus

@@ -7,7 +7,6 @@ import CustomLayout from './components/Layout.vue'
 import NavLinks from './components/NavLinks.vue'
 import ReloadPrompt from './components/ReloadPrompt.vue'
 
-
 import './styles/index.css'
 import 'uno.css';
 

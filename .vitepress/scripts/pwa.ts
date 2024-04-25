@@ -9,6 +9,7 @@ export const pwa: Partial<VitePWAOptions> = {
   includeManifestIcons: false,
   selfDestroying: true,
   manifest: {
+    id: '/',
     name: '小凯同学的网址导航',
     short_name: '小凯同学的网址导航',
     theme_color: '#ffffff',
