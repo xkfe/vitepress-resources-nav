@@ -60,6 +60,23 @@ export const NAV_DATA: INavData[] = [
     ]
   },
   {
+    title: '开发助力',
+    items: [
+      {
+        icon: '/resources-logos/uiverse.png',
+        title: 'uiverse',
+        desc: '适用于任何项目的开源ui元素',
+        link: 'https://uiverse.io/'
+      },
+      {
+        icon: '/resources-logos/css-loading.png',
+        title: 'css-loaders',
+        desc: '超过 600 个 css 动画集合',
+        link: 'https://loading.io/css/'
+      }
+    ]
+  },
+  {
     title: 'Vue生态',
     items: [
       {
@@ -196,7 +213,7 @@ export const NAV_DATA: INavData[] = [
     ]
   },
   {
-    title: '小程序相关',
+    title: '小程序/跨端',
     items: [
       {
         icon: '/resources-logos/weixin.svg',
@@ -351,6 +368,17 @@ export const NAV_DATA: INavData[] = [
         title: 'vercel',
         desc: '开发者免费的网站托管平台',
         link: 'https://vercel.com/'
+      }
+    ]
+  },
+  {
+    title: 'macOS软件',
+    items: [
+      {
+        icon: '',
+        title: '',
+        desc: '',
+        link: '',
       }
     ]
   }
