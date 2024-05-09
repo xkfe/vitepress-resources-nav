@@ -63,6 +63,12 @@ export const NAV_DATA: INavData[] = [
     title: '开发助力',
     items: [
       {
+        icon: '/resources-logos/caniuse.png',
+        title: 'Can I use',
+        desc: '查看浏览器支持情况',
+        link: 'https://caniuse.com/'
+      },
+      {
         icon: '/resources-logos/uiverse.png',
         title: 'uiverse',
         desc: '适用于任何项目的开源ui元素',
@@ -248,6 +254,39 @@ export const NAV_DATA: INavData[] = [
         title: 'wot-design-uni',
         desc: '高颜值、轻量化的uni-app组件库',
         link: 'https://wot-design-uni.gitee.io/'
+      }
+    ]
+  },
+  {
+    title: '微前端',
+    items: [
+      {
+        icon: '/resources-logos/qiankun.png',
+        title: 'qiankun',
+        desc: 'qiankun 是一个基于 single-spa 的微前端实现库',
+        link: 'https://qiankun.umijs.org/zh'
+      },
+      {
+        icon: '/resources-logos/MicroApp.png',
+        title: 'MicroApp',
+        desc: 'micro-app 是基于 webcomponent + qiankun sandbox 的微前端方案。',
+        link: 'https://micro-zoe.github.io/micro-app/'
+      },
+      {
+        icon: '/resources-logos/emp.avif',
+        title: 'EMP',
+        desc: 'EMP 方案是基于 webpack 5 module federation 的微前端方案',
+        link: 'https://emp2.netlify.app/'
+      },
+      {
+        badge: {
+          text: '推荐',
+          type: 'tip'
+        },
+        icon: '/resources-logos/wujie.svg',
+        title: '无界',
+        desc: '极致的微前端框架基于 WebComponent 容器 + iframe 沙箱',
+        link: 'https://wujie-micro.github.io/doc/'
       }
     ]
   },
