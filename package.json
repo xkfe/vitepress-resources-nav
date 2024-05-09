@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build && node .vitepress/scripts/update-version.js",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "npx simple-git-hooks"
   },
   "keywords": [],
   "author": "xkfe <xkfe0516@gmail.com>",
@@ -16,6 +18,8 @@
     "@iconify-json/fa6-solid": "^1.1.21",
     "@vite-pwa/vitepress": "^0.4.0",
     "@vue/tsconfig": "^0.5.1",
+    "only-allow": "^1.2.1",
+    "simple-git-hooks": "^2.11.1",
     "vitepress": "^1.1.3"
   },
   "dependencies": {
@@ -28,5 +32,8 @@
     "vite": "^5.2.10",
     "vite-plugin-pwa": "^0.19.8",
     "vue": "^3.4.23"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "node .vitepress/scripts/update-version.js"
   }
 }
