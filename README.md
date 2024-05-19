@@ -8,7 +8,7 @@
 
 <h3>预览地址</h3>
 <p>
-  <a href="https://vitepress-resources-nav.vercel.app/">https://resources-nav.kaife.cn</a>
+  <a href="https://resources-nav.kaife.cn/">https://resources-nav.kaife.cn</a>
 </p>
 
 <p>
