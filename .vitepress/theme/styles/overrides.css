@@ -31,6 +31,9 @@ table {
 .VPDocOutlineItem .outline-link {
   line-height: 34px;
 }
+.VPDocOutlineItem .outline-link.active {
+  color: var(--vp-c-brand-1);
+}
 .VPDocAsideOutline .content {
   border-left: none;
   padding-left: 20px;

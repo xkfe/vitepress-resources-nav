@@ -4,7 +4,7 @@ export const pwa: Partial<VitePWAOptions> = {
   outDir: 'dist',
   base: '/',
   scope: '/',
-  registerType: 'prompt',
+  registerType: 'autoUpdate',
   includeAssets: ['favicon.svg'],
   includeManifestIcons: false,
   selfDestroying: true,
