@@ -7,8 +7,8 @@ export const NAV_DATA: INavData[] = [
       {
         icon: '/resources-logos/george.webp',
         badge: {
-          text: '推荐',
-          type: 'warning'
+          text: '好用推荐',
+          type: 'tip'
         },
         title: 'tinypng压缩',
         desc: '智能 WebP、PNG 和 JPEG 压缩',
@@ -33,6 +33,10 @@ export const NAV_DATA: INavData[] = [
         link: 'https://convertio.co/zh/',
       },
       {
+        badge: {
+          text: '好用推荐',
+          type: 'tip'
+        },
         icon: '',
         title: '在线文本比较',
         desc: '一个可以找出两个文本文件差异的在线差异比较工具',
@@ -45,6 +49,10 @@ export const NAV_DATA: INavData[] = [
         link: 'https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode'
       },
       {
+        badge: {
+          text: '好用推荐',
+          type: 'tip'
+        },
         icon: '/resources-logos/excalidraw.png',
         title: 'Excalidraw作图',
         desc: 'Excalidraw 是一款虚拟协作白板工具，可让您轻松绘制具有手绘感觉的图表。',
@@ -411,14 +419,48 @@ export const NAV_DATA: INavData[] = [
     ]
   },
   {
-    title: 'macOS软件',
+    title: '前端面试',
     items: [
       {
+        icon: '/resources-logos/lgwebdream.ico',
+        title: '前端面试',
+        desc: '前端面试，前端刷题必备，收录 1000+ 大厂前端面试真题',
+        link: 'https://lgwebdream.github.io/FE-Interview/',
+      },
+      {
         icon: '',
-        title: '',
-        desc: '',
-        link: '',
-      }
+        title: 'web前端面试 - 面试官系列',
+        desc: '语音打卡社群(JS每日一题)维护的前端面试题库，包含不限于Vue面试题，React面试题，JS面试题，HTTP面试题，工程化面试题，CSS面试题，算法面试题，大厂面试题，高频面试题',
+        link: 'https://vue3js.cn/interview/'
+      },
+      {
+        badge: {
+          text: '需要付费',
+          type: 'warning'
+        },
+        icon: '',
+        title: '前端进阶之旅',
+        desc: '前端系统进阶笔记 & 面试指南',
+        link: 'https://interview.poetries.top/'
+      },
+      {
+        icon: '/resources-logos/leetcode.svg',
+        title: 'leetcode',
+        desc: '力扣 (LeetCode) 是一个专注于算法，数据结构，编程的在线学习和交流平台，提供最经典，最热门，最实用的面试题，竞赛，职业发展等内容',
+        link: 'https://leetcode.cn/'
+      },
     ]
-  }
+  },
+  // {
+  //   title: 'macOS软件',
+  //   items: [
+  //     {
+  //       icon: '',
+  //       title: '',
+  //       desc: '',
+  //       link: '',
+  //     }
+  //   ]
+  // }
+  
 ]

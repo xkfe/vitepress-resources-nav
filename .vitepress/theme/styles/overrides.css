@@ -28,6 +28,29 @@ table {
 /**
  * VitePress: Custom fix
  * -------------------------------------------------------------------------- */
+.VPDocOutlineItem .outline-link {
+  line-height: 34px;
+}
+.VPDocAsideOutline .content {
+  border-left: none;
+  padding-left: 20px;
+}
+.VPDocAsideOutline .outline-marker {
+  width: 4px;
+  height: 20px;
+  left: 6px;
+}
+.VPDocAsideOutline .outline-marker::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--vp-c-brand-1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*
   Use lighter colors for links in dark mode for a11y.

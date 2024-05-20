@@ -1,7 +1,7 @@
 {
   "name": "vitepress-resources-nav",
   "type": "module",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "",
   "main": "index.js",
   "scripts": {
