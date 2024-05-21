@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
-import { pwa } from './scripts/pwa'
+// import { pwa } from './scripts/pwa'
 
 // https://vitepress.dev/zh/reference/site-config
 export default withPwa(defineConfig({
@@ -49,5 +49,5 @@ export default withPwa(defineConfig({
     //   plugins: [MarkdownPreview()],
     // },
   },
-  pwa
+  // pwa
 }))
