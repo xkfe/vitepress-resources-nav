@@ -7,7 +7,7 @@ export const NAV_DATA: INavData[] = [
       {
         icon: '/resources-logos/george.webp',
         badge: {
-          text: '好用推荐',
+          text: '推荐',
           type: 'tip'
         },
         title: 'tinypng压缩',
@@ -34,7 +34,7 @@ export const NAV_DATA: INavData[] = [
       },
       {
         badge: {
-          text: '好用推荐',
+          text: '推荐',
           type: 'tip'
         },
         icon: '',
@@ -50,7 +50,7 @@ export const NAV_DATA: INavData[] = [
       },
       {
         badge: {
-          text: '好用推荐',
+          text: '推荐',
           type: 'tip'
         },
         icon: '/resources-logos/excalidraw.png',
@@ -64,6 +64,23 @@ export const NAV_DATA: INavData[] = [
         title: 'tldraw作图',
         desc: '一款免费且即时的协作绘图工具',
         link: 'https://www.tldraw.com/'
+      },
+      {
+        icon: '/resources-logos/iconce-logo.svg',
+        title: 'iconce',
+        desc: 'SVG 图标编辑生成工具。',
+        link: 'https://iconce.com/'
+      },
+      {
+        icon: '/resources-logos/aspect-logo.png',
+        badge: {
+          text: '推荐',
+          type: 'tip'
+        },
+        title: 'Aspect',
+        desc: 'Aspect - 长宽比例换算工具，平面设计师、UI设计师、网页设计师必备',
+        link: 'https://www.shejidaren.com/examples/tools/aspect/index.html'
+        
       }
     ]
   },
@@ -140,6 +157,12 @@ export const NAV_DATA: INavData[] = [
         title: 'Vue Macros',
         desc: '探索更多的宏和语法糖到 Vue 中',
         link: 'https://vue-macros.dev/zh-CN/'
+      },
+      {
+        icon: '/resources-logos/vue-devTools-logo.svg',
+        title: 'Vue DevTools',
+        desc: 'Vue DevTools 是一款旨在增强 Vue 开发人员体验的工具，它的实时编辑、时间旅行调试和全面检查功能使其成为任何 Vue.js 开发人员的必备工具。',
+        link: 'https://devtools-next.vuejs.org/'
       },
       {
         icon: '/resources-logos/vuejs-challenges.png',
@@ -236,6 +259,12 @@ export const NAV_DATA: INavData[] = [
         link: 'https://developers.weixin.qq.com/miniprogram/dev/framework/'
       },
       {
+        icon: '/resources-logos/weapp-tailwindcss-logo.svg',
+        title: 'weapp-tailwindcss',
+        desc: '降低开发维护成本，提升开发效率的小程序 使用tailwindcss 全方面解决方案',
+        link: 'https://weapp-tw.icebreaker.top/'
+      },
+      {
         icon: '/resources-logos/uniapp.png',
         title: 'UniApp',
         desc: '一个使用 Vue.js 开发所有前端应用的框架',
@@ -313,6 +342,17 @@ export const NAV_DATA: INavData[] = [
         desc: '只需 HTML 即可快速构建现代网站',
         link: 'https://tailwind.nodejs.cn/'
       }
+    ]
+  },
+  {
+    title: 'Node生态',
+    items: [
+      {
+        icon: '/resources-logos/nodejs-logo.webp',
+        title: 'Node.js 中文网',
+        desc: 'Node.js 是一个开源的、跨平台的 JavaScript 运行时环境',
+        link: 'https://nodejs.cn/'
+      },
     ]
   },
   {

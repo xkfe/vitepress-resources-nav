@@ -35,7 +35,7 @@ const formatBadge = computed(() => {
 </script>
 
 <template>
-  <a v-if="link" class="m-nav-link" :href="link" target="_blank" rel="noreferrer">
+  <a v-if="link" class="m-nav-link" :href="link" target="_blank" rel="noreferrer" :title="desc">
     <article class="box" :class="{ 'has-badge': formatBadge }">
       <div class="box-header">
         <template v-if="!noIcon">
