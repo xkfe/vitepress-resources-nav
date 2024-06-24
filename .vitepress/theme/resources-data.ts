@@ -104,6 +104,12 @@ export const NAV_DATA: INavData[] = [
         title: 'css-loaders',
         desc: '超过 600 个 css 动画集合',
         link: 'https://loading.io/css/'
+      },
+      {
+        icon: '/resources-logos/css-loading.png',
+        title: 'WebTracing',
+        desc: '为前端项目提供完善的监控手段',
+        link: 'https://m-cheng-web.github.io/web-tracing/'
       }
     ]
   },
@@ -405,6 +411,22 @@ export const NAV_DATA: INavData[] = [
         title: 'ECharts',
         desc: '一个使用 JavaScript 实现的开源可视化库',
         link: 'https://echarts.apache.org/zh/index.html'
+      },
+      {
+        badge: {
+          text: '需要登录看广告',
+          type: 'tip'
+        },
+        icon: '/resources-logos/isqqw-logo.ico',
+        title: 'isqqw',
+        desc: 'ECharts Demo集合(ECharts社区)',
+        link: 'https://www.isqqw.com/'
+      },
+      {
+        icon: '/resources-logos/ppchart-logo.ico',
+        title: 'ppchart',
+        desc: '让图表更简单。PPChart 提供 Echarts 收录、图表制作等服务(ECharts社区)',
+        link: 'https://ppchart.com/'
       }
     ]
   },
