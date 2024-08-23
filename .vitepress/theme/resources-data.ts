@@ -2,7 +2,7 @@ import type { INavData } from './types'
 
 export const NAV_DATA: INavData[] = [
   {
-    title: '好用工具',
+    title: '工具',
     items: [
       {
         icon: '/resources-logos/george.webp',
@@ -81,6 +81,12 @@ export const NAV_DATA: INavData[] = [
         desc: 'Aspect - 长宽比例换算工具，平面设计师、UI设计师、网页设计师必备',
         link: 'https://www.shejidaren.com/examples/tools/aspect/index.html'
         
+      },
+      {
+        icon: '/resources-logos/xiaobin-ai.png',
+        title: 'AI抠图/证件照',
+        desc: '使用开源模型 briaai/RMBG-1.4实现图像抠图,支持单张图像拖拽、粘贴图像和连接、和批量抠图。支持多种格式的证件照制作、支持单张和批量图像格式转换。',
+        link: 'https://matting.20133075.xyz/',
       }
     ]
   },
