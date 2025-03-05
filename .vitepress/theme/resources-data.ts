@@ -91,6 +91,41 @@ export const NAV_DATA: INavData[] = [
     ]
   },
   {
+    title: '前端插件',
+    items: [
+      {
+        icon: '/resources-logos/css-loading.png',
+        title: 'WebTracing',
+        desc: '为前端项目提供完善的监控手段',
+        link: 'https://m-cheng-web.github.io/web-tracing/'
+      }
+    ]
+  },
+  {
+    title: 'CSS-Loaders',
+    items: [
+      
+      {
+        icon: '',
+        title: 'css-loaders',
+        desc: '使用单个元素制作的 600 多个纯 CSS 加载器',
+        link: 'https://css-loaders.com/'
+      },
+      {
+        icon: '',
+        title: 'cssloaders',
+        desc: 'CSS Loader 是不同类型的加载器、旋转器及其源代码的集合',
+        link: 'https://cssloaders.github.io/'
+      },
+      {
+        icon: '/resources-logos/css-loading.png',
+        title: 'css-loaders',
+        desc: '超过 600 个 css 动画集合',
+        link: 'https://loading.io/css/'
+      },
+    ]
+  },
+  {
     title: '开发助力',
     items: [
       {
@@ -105,18 +140,6 @@ export const NAV_DATA: INavData[] = [
         desc: '适用于任何项目的开源ui元素',
         link: 'https://uiverse.io/'
       },
-      {
-        icon: '/resources-logos/css-loading.png',
-        title: 'css-loaders',
-        desc: '超过 600 个 css 动画集合',
-        link: 'https://loading.io/css/'
-      },
-      {
-        icon: '/resources-logos/css-loading.png',
-        title: 'WebTracing',
-        desc: '为前端项目提供完善的监控手段',
-        link: 'https://m-cheng-web.github.io/web-tracing/'
-      }
     ]
   },
   {
@@ -433,12 +456,24 @@ export const NAV_DATA: INavData[] = [
         title: 'ppchart',
         desc: '让图表更简单。PPChart 提供 Echarts 收录、图表制作等服务(ECharts社区)',
         link: 'https://ppchart.com/'
+      },
+      {
+        icon: '/resources-logos/makeapie-logo.png',
+        title: '可视化社区',
+        desc: 'makeapie echarts图表可视化案例, 分享你的可视化作品',
+        link: 'https://www.makeapie.cn/echarts'
       }
     ]
   },
   {
-    title: '在线IDE',
+    title: '在线CDE',
     items: [
+      {
+        icon: '/resources-logos/codesandbox.svg',
+        title: 'codesandbox',
+        desc: 'CodeSandbox is a cloud development platform that empowers developers to code, collaborate and ship projects of any size from any device in record time.',
+        link: 'https://codesandbox.io/'
+      },
       {
         icon: '/resources-logos/stackblitz.svg',
         title: 'StackBlitz',

@@ -61,7 +61,7 @@ const formatBadge = computed(() => {
 <style lang="scss" scoped>
 .m-nav-link {
   --m-nav-icon-box-size: 50px;
-  --m-nav-icon-size: 45px;
+  --m-nav-icon-size: 40px;
   --m-nav-box-gap: 12px;
 
   display: block;
